@@ -6,6 +6,7 @@ import telebot
 
 BOT_TOKEN = '8114212424:AAFRUF0NBWi0GfIWiTh2-LjKdq7vbgmeRtU'
 TOM_CHAT_ID = 5381425245
+
 bot = telebot.TeleBot(BOT_TOKEN)
 app = Flask(__name__)
 
@@ -66,5 +67,5 @@ threading.Thread(target=recordatorio_diario, daemon=True).start()
 
 if __name__ == '__main__':
     bot.remove_webhook()
-    bot.set_webhook(url='https://<RUTA_DE_RENDER>.onrender.com/8114212424:AAFRUF0NBWi0GfIWiTh2-LjKdq7vbgmeRtU')
+    bot.set_webhook(url='https://namarie-bot.onrender.com/8114212424:AAFRUF0NBWi0GfIWiTh2-LjKdq7vbgmeRtU')
     app.run(host='0.0.0.0', port=10000)
